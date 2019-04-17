@@ -1,0 +1,21 @@
+{
+	"name": "pudding-starter",
+	"version": "0.0.1",
+	"description": "CLI for to create a new Pudding story",
+	"main": "pudding-starter.js",
+	"scripts": {
+		"start": "node pudding-starter.js"
+	},
+	"bin": {
+		"pudding-starter": "./pudding-starter.js"
+	},
+	"keywords": [
+		"the pudding"
+	],
+	"author": "Russell Goldenberg",
+	"license": "MIT",
+	"dependencies": {
+		"commander": "2.20.0",
+		"shelljs": "0.8.3"
+	}
+}
