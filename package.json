@@ -1,6 +1,6 @@
 {
 	"name": "pudding-starter",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "CLI for to create a new Pudding story",
 	"main": "pudding-starter.js",
 	"scripts": {
