@@ -3,7 +3,7 @@
 const program = require('commander');
 const shell = require('shelljs');
 
-const VERSION = '0.0.1';
+const VERSION = '0.0.2';
 const CWD = process.cwd();
 
 program.version(VERSION)
