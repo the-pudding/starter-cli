@@ -7,16 +7,17 @@ const VERSION = '0.0.1';
 const CWD = process.cwd();
 
 program.version(VERSION)
-	.option('-n, --name [optional]', 'name the project, default is "story"')
+	.option('-c, --client', 'flag if it is a client project')
 	.parse(process.argv);
 
 // arguments
-let { name } = program;
-name = name || 'story';
+let { client } = program;
+
+const makeClient = client ? ' make client;' : '';
 
 async function download() {
 	console.log('downloading starter template...');
-	const command = 'curl -Lk https://bit.ly/2J0L3MD > Makefile; make setup;'
+	const command = `curl -Lk https://bit.ly/2J0L3MD > Makefile; make setup;${makeClient}`
 	try {
 		shell.exec(command);
 		return Promise.resolve();
